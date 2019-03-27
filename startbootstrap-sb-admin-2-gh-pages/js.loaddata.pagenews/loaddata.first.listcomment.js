@@ -1,13 +1,10 @@
-var loaddatacomments = []; 
+var datacomments = []; 
 
-$(document).ready(function () {
-    loadlistcomment(); 
-});
 // loaddata by PostID. 
-function loadlistcomment() {
-    loaddatacomments = [
-        {content: "yep", employeecmt: "17010608", imagecmt: "", timecmt: "2019-03-21T00:00:00"}, 
-        {content: "yep", employeecmt: "17010608", imagecmt: "", timecmt: "2019-03-21T00:00:00"}, 
-        {content: "yep", employeecmt: "16020608", imagecmt: "", timecmt: "2019-03-21T00:00:00"}, 
+function loaddatacomment(postID) {
+    datacomments = [
+        {avtURL: "https://source.unsplash.com/QAB-WJcbgJk/60x60", idcmt: 15, img: "./css.dev/Image/me.jpg", name: "ChienNguyen", text: "yep", time: "2019-03-21"}, 
+        {avtURL: "https://source.unsplash.com/QAB-WJcbgJk/60x60", idcmt: 16, img: "./css.dev/Image/me.jpg", name: "ChienNguyen", text: "yep", time: "2019-03-21"},
+        {avtURL: "https://source.unsplash.com/QAB-WJcbgJk/60x60", idcmt: 17, img: "./css.dev/Image/me.jpg", name: "ChienNguyen", text: "yep", time: "2019-03-21"}
     ]; 
 }

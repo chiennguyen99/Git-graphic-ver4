@@ -35,10 +35,22 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div class="card-comment">
-                        <a href="#collapseCardExample`+ postID +`" onclick="loadlistcomment(`+ postID +`)" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                        <a href="#collapseCardExample`+ postID +`" onclick="loadlistcomment(`+ postID +`)" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseCardExample">
                             <h6 class="m-0 font-weight-bold text-primary">Comment</h6>
                         </a>
-                        <div class="collapse show" id="collapseCardExample`+ postID +`">              
+                        <div class="collapse" id="collapseCardExample`+ postID +`">
+                            <div class="card-body">
+                                <div id="content-comment-post`+ postID +`"></div>
+                                <div id="push-comment-post1">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Do you have comments?" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Push</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>      
                         </div>
                     </div>
             </div>
